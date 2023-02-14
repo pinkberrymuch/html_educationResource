@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>starbucks korea</title> <!--css 링크 걸 때 '링크'로 걸기-->
+  <link rel="stylesheet" href="Starbucks.css"> 
+</head>
+<body>
+  <div id="page">
+    <header> 
+      <div class="starbucks-home"> <!--클릭 시 홈화면으로 이동하는 스타벅스 로고-->
+       <a href="#" target="_blank" id="home">
+         <img src="Imeges_이소영/starbucks-logo.webp" width="78vw" alt="homelogo"
+          style="max-width: 100%;height: auto;" title="스타벅스코리아">
+       </a> 
+      </div> 
+      <nav class="sub-navi"> <!--서브 메뉴-->
+        <div> 
+          <ul>
+             <li><a href="#" target="_blank" id="sign-in">Sign in</a></li>
+             <li><a href="#" target="_blank" id="my-info">My Starbucks</a></li>
+             <li><a href="#" target="_blank" id="corporate">CORPORATE SALES</a></li>
+             <li><a role="button" href="javascript:void(0);">매장 찾기
+               <span class="mob_gnb_arrow_down"></span></a></li>
+          </ul> 
+        </div>  
+       </nav> 
+
+      <nav class="main-navi"> <!--메인 메뉴-->
+       <div>
+         <ul>
+            <li><a href="#" target="_blank" id="menu">MENU</a></li>
+            <li><a href="#" target="_blank" id="reward">Starbucks Reward</a></li>
+            <li><a href="#" target="_blank" id="corporate">CORPORATE SALES</a></li>
+            <li><a href="#" target="_blank" id="news">EVENT & NEWS</a></li> 
+            <!--기존의 WHAT'S NEW 타이틀보다는 이벤트와 뉴스에 대한 단어적 접근성 고려로 메뉴명 수정-->
+         </ul>
+       </div>  
+      </nav> 
+     </div> 
+    </header>
+    <aside> <!--온라인 주문 후 매장 방문하여 수령하는 오더 칸 삽입-->
+      <div id=sideorder>
+        <h3>Menu/Drinks</h3>
+        <select name="drink-menu">
+          <option>음료 메뉴를 선택하세요</option>
+           <optgroup label="에스프레소"></optgroup>
+              <option value="카페 아메리카노">카페 아메리카노</option>
+              <option value="카페 라떼">카페 라떼</option>
+              <option value="카푸치노">카푸치노</option>
+              <option value="카라멜 마키아토">카라멜 마키아토</option>
+              <option value="화이트 초콜릿 모카">화이트 초콜릿 모카</option>
+              <option value="카페 모카">카페 모카</option>
+              <option value="스타벅스 돌체 라떼">스타벅스 돌체 라떼</option>
+              <option value="에스프레소">에스프레소</option>
+              <option value="바닐라 플랫 화이트">바닐라 플랫 화이트</option>
+           <optgroup label="프라푸치노-only ice"></optgroup>
+              <option value="더블 에스프레소 칩 프라푸치노">더블 에스프레소 칩 프라푸치노</option>
+              <option value="제주 유기농 말차 프라푸치노">제주 유기농 말차 프라푸치노</option>
+              <option value="자바 칩 프라푸치노">자바 칩 프라푸치노</option>
+              <option value="초콜릿 크림 칩 프라푸치노">초콜릿 크림 칩 프라푸치노</option>
+              <option value="모카 프라푸치노">모카 프라푸치노</option>
+              <option value="카라멜 프라푸치노">카라멜 프라푸치노</option>
+           <optgroup label="티바나"></optgroup>
+              <option value="유자 민트 티">유자 민트 티</option>
+              <option value="자몽 허니 블랙 티">자몽 허니 블랙 티</option>
+              <option value="차이 티 라떼">차이 티 라떼</option>
+              <option value="얼 그레이 티">얼 그레이 티</option>
+              <option value="제주 비양도 선셋 티">제주 비양도 선셋 티</option>
+           <optgroup label="주문 가능 메뉴 업데이트 중"></optgroup>    
+        </select> 
+        <h3>Size option</h3>
+        <div class="size_option">
+          <label><input type="radio" name="size" value="short">
+            <img src="Imeges/size_option_none.png">
+            <p class="sizemenu">Short</p>
+            <p style="font-size: small;">8 fl oz</p>
+          </label>
+          <label><input type="radio" name="size" value="tall">
+            <img src="Imeges/size_option_none.png">
+            <p class="sizemenu">Tall</p>
+            <p style="font-size: small;">12 fl oz</p>
+          </label>
+          <label><input type="radio" name="size" value="grande">
+            <img src="Imeges/size_option_none.png">
+            <p class="sizemenu">Grande</p>
+            <p style="font-size: small;">16 fl oz</p>
+          </label>
+          <label><input type="radio" name="size" value="venti">
+            <img src="Imeges/size_option_none.png">
+            <p class="sizemenu">Venti</p>
+            <p style="font-size: small;">20 fl oz</p>
+          </label>
+       </div>
+
+        <h3>Menu/Food</h3>
+        <select name="side-menu">
+        <option>사이드 메뉴를 선택하세요</option>
+         <optgroup label="브레드"></optgroup>
+            <option value="리얼 블루베리 베이글">리얼 블루베리 베이글</option>
+            <option value="클래식 스콘">클래식 스콘</option>
+            <option value="하트 파이">하트 파이</option>
+            <option value="치즈 할라피뇨 치아바타">치즈 할라피뇨 치아바타</option>
+         <optgroup label="케이크&미니디저트"></optgroup>
+            <option value="부드러운 생크림 카스텔라">부드러운 생크림 카스텔라</option>
+            <option value="블루베리 쿠키 치즈 케이크">블루베리 쿠키 치즈 케이크</option>
+            <option value="다크초코 마카롱">다크초코 마카롱</option>
+            <option value="스트로베리 마카롱">스트로베리 마카롱</option>
+            <option value="클래식 티라미수">클래식 티라미수</option>
+         <optgroup label="주문 가능 메뉴 업데이트 중"></optgroup>
+       </select>
+       <h3>매장 방문 예정 시간</h3>
+       <input type="time">
+       <p style="font-size: small;">※ 오더 가능 시간 : 09:00 ~ 20:00 </p>
+       <h3>주문 정보 입력</h3>
+       <p style="font-size:medium;">주문번호가 입력하신 연락처 또는 이메일로 발송 될 예정이오니
+       필수로 작성해주세요.</p>
+       <form class="form-wrap">
+        <label for="first-name">주문자</label><br>
+        <input type="text" name="Name" id="name" placeholder="성함을 입력해 주세요" required>
+        <label for="tel">연락처 또는 이메일</label><br>
+        <input type="text" name="tel" id="tel" placeholder="연락처를 입력해 주세요" required>
+       <p>*시즌 한정 상품은 별도 문의</p>
+       <p>*매장 상황 및 수급에 따라 메뉴 변동</p>
+      </div>
+     </aside>
+     <section>
+      <!--매거진-->
+      <article class="ad">
+       <div><a href="#" target="_blank" id=""><img src="Imeges/reserve_magazin_pc.png"></a></div>
+      </article>
+
+      <!--인기 커피 및 푸드메뉴 / 마우스오버 시 제품명과 영양정보 표시-->
+      <article class="menu">
+      <div><h2>인기 커피 메뉴<img src="Imeges/logo_decaf.png" 
+        alt="menu_img" width="40px"></h2>
+      </div> 
+      <div class="popular">
+        <ul>
+          <li><img src="meges/lavenda_latte.png" alt="lavenda_latte">
+            <div class="caption">
+              <h3>라벤더 카페 브레베</h3>
+              <p>카페인(mg) : 105</p>
+            </div>
+          </li> 
+          <li><img src="Imeges/cortado.png" alt="cortado">
+            <div class="caption">
+              <h3>럼 샷 코르타도</h3>
+              <p>카페인(mg) : 160</p>
+            </div>
+          </li> 
+          <li><img src="Imeges/vanillabeen_latte.png" alt="vanillabeen_latte">
+            <div class="caption">
+              <h3>바닐라 빈 라떼</h3>
+              <p>카페인(mg) : 210</p>
+            </div>
+          </li> 
+          <li><img src="Imeges/sakerato.png" alt="sakerato">
+            <div class="caption">
+              <h3>사케라또 아포가토</h3>
+              <p>카페인(mg) : 210</p>
+            </div>
+          </li> 
+          <li><img src="Imeges/mintmoka.png" alt="mintmoka">
+            <div class="caption">
+              <h3>클래식 민트 모카</h3>
+              <p>카페인(mg) : 210</p>
+            </div>
+          </li> 
+        </ul>
+      </div>
+        <div><h2>인기 푸드 메뉴<img src="Imeges/logo_decaf.png"
+          alt="menu_img" width="40px"></h2>
+        </div> 
+        <div class="popular">
+          <ul>
+            <li><img src="Imeges/mascafone_tart.png" alt="mascafone_tart.png">
+              <div class="caption">
+                <h3>마스카포네 치즈 타르트</h3>
+                <p>1회 제공량(kcal) : 610</p>
+              </div>
+            </li>  
+            <li><img src="Imeges/carrot_cake.png" alt="carrot_cake.png">
+              <div class="caption">
+                <h3>당근 피칸 케이크</h3>
+                <p>1회 제공량(kcal) : 820</p>
+              </div>
+            </li>   
+            <li><img src="Imeges/heart_pie.png" alt="heart_pie">
+              <div class="caption">
+                <h3>하트 파이</h3>
+                <p>1회 제공량(kcal) : 466</p>
+              </div>
+            </li> 
+            <li><img src="Imeges/smooth_castera.png" alt="smooth_castera">
+              <div class="caption">
+                <h3>부드러운 생크림 카스텔라</h3>
+                <p>1회 제공량(kcal) : 565</p>
+              </div>
+            </li> 
+            <li><img src="Imeges/tiramisu_roll.png" alt="tiramisu_roll">
+              <div class="caption">
+                <h3>부드러운 티라미수 롤</h3>
+                <p>1회 제공량(kcal) : 443</p>
+              </div>
+            </li> 
+          </ul>
+        </div>
+      </article> 
+      <!--리저브 신메뉴 정보-->
+      <article class="ad">
+        <div><a href="#" target="_blank" id="">
+          <img src="Imeges/reserve_newmenu.png" ></a></div>
+      </article>
+     </section>
+   </div>
+</body>
+</html>
