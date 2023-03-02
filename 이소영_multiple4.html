@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>4의 배수일까 아닐까</title>
+  <style>
+    body {
+      text-align: center;
+      font-size: 1.2em;
+    }
+  </style>
+</head>
+<body>
+  <h2>4의 배수일까 아닐까</h2> 
+  <script>
+     var usernumber = prompt ("숫자를 입력하세요.") ;
+
+ if (usernumber !== null) { //취소버튼이 눌리지 않았을때 !==
+   if (usernumber % 4 === 0) //4를 나눈 나머지가 0이면 4의 배수
+      document.write(usernumber + "는 4의 배수입니다");
+   else
+      document.write(usernumber + "는 4의 배수가 아닙니다"); 
+  } else { 
+   alert ("입력이 취소됐습니다"); //취소버튼이 눌렸을때
+   }
+  </script>
+</body>
+</html>
