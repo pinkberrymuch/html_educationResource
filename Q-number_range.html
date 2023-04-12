@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>등록 정보</title>
+</head>
+<body>
+  <fieldset>
+    <legend>등록정보</legend>
+    <ul> 
+      <li> <label for="member">참여인원<small>(최대10명)</small></label>
+        <input type="number" id="member" min="0" max="10"></li><br>
+      <li><label for="stuffs">지원물품<small>(1인당 5개)</small></label>
+        <input type="number" id="stuffs" min="0" max="50"></li><br>
+      <li> <label for="statis">희망 단계<small>(하,중,상)</small></label>
+        <input type="range" id="statis"  value="1" min="1" max="3"></li>
+     </ul>
+  </fieldset>
+</body>
+</html>

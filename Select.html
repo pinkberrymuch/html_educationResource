@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>레드향 주문하기</title>
+</head>  <!--Select , Datalist , Button 태그 배우기-->
+<body>
+  <form action="">
+    <fieldset>
+      <legend>상품 선택</legend>
+      <p><b>주문할 상품을 선택해 주세요</b></p> <!--Select-->
+      <select size="2">
+        <option value="1_3">선물용 3kg</option>
+        <option value="1_5" selected>선물용 5kg</option>
+        <option value="2_3">가정용 3kg</option>
+        <option value="2_5">가정용 5kg</option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <legend>상품 선택</legend>
+      <p><b>주문할 상품을 선택해 주세요</b></p> <!--Datarist-->
+      <input type="text" list="goods">
+      <datalist id="goods">
+        <option value="1_3">선물용 3kg</option>
+        <option value="1_5">선물용 5kg</option>
+        <option value="2_3">가정용 3kg</option>
+        <option value="2_5">가정용 5kg</option>
+      </datalist>
+    </fieldset>
+    <button type="submit">전 송</button> <!--버튼-->
+    <button type="reset">다시작성</button>
+  </form>
+  
+</body>
+</html>

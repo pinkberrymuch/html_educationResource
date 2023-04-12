@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>if-else를 이용한 요금제 계산</h2>
+  <hr>
+  <script>
+  var chage;
+  var age = prompt("나이를 입력하세요.","");
+
+    if (age >= 60) 
+      chage="무료";
+     else if(age >= 20)
+      chage="성인 요금";
+     else if(age >= 13)
+      chage="청소년 요금";
+     else if(age >= 8)
+      chage="어린이 요금"; 
+     else 
+      chage="무료"; 
+  
+  document.write(age +"세는 " + chage + "입니다");    
+ </script>
+  
+</body>
+</html>

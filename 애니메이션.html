@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #container {
+      width: 500px;
+      margin: 20px auto;
+    }
+    .box {
+      width: 100px;
+      height: 100px;
+      float: left;
+      margin: 50px;
+    }
+    #box1 {
+      background-color: #4cff00;
+      border: 1px solid transparent;
+      animation-name: shape; /*애니메이션 지정*/
+      animation-duration: 3s; /*애니메이션 실행 시간*/
+      animation-iteration-count: infinite; /*애니메이션 무한반복*/
+      animation-direction: alternate; /*갔다가 역재생으로 돌아옴*/
+    }
+    #box2 {
+     background-color: #8f06b0;
+     border: 1px solid transparent;
+     animation-name: rotate;/*애니메이션 지정*/
+     animation-duration: 3s; /*애니메이션 실행 시간*/
+     animation-iteration-count: infinite; /*애니메이션 무한반복*/
+     animation-direction: alternate; /*갔다가 역재생으로 돌아옴*/
+    }
+   @keyframes shape /* shape: 애니메이션 정의*/ {
+    0% {
+      border:1px solid transparent; /*1px 짜리 투명테두리*/
+    }
+    100% {
+      border: 1px solid #000;
+      border-radius: 50%;
+    }
+   }
+   @keyframes rotate {/*애니메이션 정의*/
+    from {
+      transform:rotate(0deg); /*시작은 0도에서*/
+    }
+    to {
+      transform: rotate(45deg); /*45도 까지 회전*/
+    }
+   }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+  </div>
+</body>
+</html>

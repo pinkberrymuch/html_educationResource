@@ -1,0 +1,28 @@
+#container {
+  width: 1200px;
+  margin: 20px auto;
+}
+#header {
+  background-color:#888888;
+  height: 120px; width: 100%;
+}
+#left_sidebar {
+  height: 600px; width: 250px;
+  background-color:rgb(241, 235, 235);
+  float: left;
+}
+#contents {
+  height: 600px; width: 800px; 
+  background-color: white;
+  float: left;
+}
+#right_sidebar {
+  height: 600px; width: 150px;
+  background-color: rgb(241, 235, 235);
+  float: right;
+} 
+#footer {
+  background-color:#888888;
+  height: 100px; width: 100%;
+  clear: both; /* 양쪽 플로팅 해제*/
+}

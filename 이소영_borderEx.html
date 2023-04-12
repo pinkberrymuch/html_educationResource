@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>border ex</title>
+  <style>
+    h2 {
+     border-left: 10px solid green; /*boder-left 속성 사용*/
+     padding-left:  20px; /* 첫글자 간격 조정*/
+    }
+    div {
+      padding: 30px;
+      margin: 10px;
+      border-radius: 25px;
+      background-color: lightgrey;
+    }
+    #ul1 { /*불릿 없애기*/
+      list-style: none; 
+    }
+  </style>
+</head>
+<body>
+  <h2 id="lefegreen">우대 정보</h2>
+  <div>
+    <ul>
+      <li>
+        연령에 따른 우대 (나이 확인이 가능한 신분증 또는 서류 제시)
+        <ul id="ul1"> <!--하위 ul만 불릿 없애기-->
+          <li>- 경로 : 만65세 ~</li>
+          <li>- 청소년 : 만13세 ~ 만18세</li>
+        </ul>
+      </li>
+      <li>
+        장애인 우대 (장애인 등록증 제시) 우대가격
+        <ul id="ul1"><!--하위 ul만 불릿 없애기-->
+          <li>- 1일 이용권 우대가로 구입 가능</li>
+          <li>- 장애의 정도가 심한 장애인 : 본인+동반 1인</li>
+        </ul>
+      </li>
+      <li>
+        국가 유공자 우대 (증명서류 제시) 파크이용권 가격 보기
+        <ul id="ul1">- 본인 + 동반 1인, 1일 이용권 50% 우대가로 구입 가능</ul>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>

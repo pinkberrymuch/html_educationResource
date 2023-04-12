@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>레드향 주문하기</title>
+</head>
+<body>
+  <h1>레드향 주문하기</h1>
+  <form action="">
+    <label for="user-id">아이디(6자 이상)ㅣ</label>
+    <input type="text" id="user-id"><br>
+    <label>아이디(6자 이상)<input type="text"></label> <!--lable 이랑 input 태그를 붙여서 쓰면 붙어서 출력-->
+    <fieldset>
+      <legend>상품선택</legend>
+      <p><b>주문할 상품을 선택해 주세요</b></p>
+      <ul>
+       <li>
+       <label><input type="checkbox" value="s_3">선물용 3kg</label> 
+       <input type="number" min="0" max="10" step="2">개 (최대 5개)</li>
+       <!--input 값은 입력하면 서버로 넘어간다-->
+       <li><label><input type="checkbox" value="s_5">선물용 5kg</label>
+       <input type="number" min="0" max="3">개 (최대 3개)</li><br>
+       <!--근데 체크박스는 체크가 되어있는것 만으로는 값을 알 수 없으니 Value 값을 입력하는게 필수임-->
+       <li><label><input type="checkbox" value="f_3">가정용 3kg</label>
+       <input type="range" min="0" max="3">개 (최대 3개)</li>
+       <li><label><input type="checkbox" value="f_5">가정용 5kg</label> 
+       <input type="range" min="0" max="5" value="5">개 (최대 5개)</li>
+      <p><b>포장선택</b></p>
+      <label><input type="radio" name="gift" value="yes">선물 포장</label>
+      <label><input type="radio" name="gift" value="no">선물 포장 안함</label>
+    </fieldset>
+    <fieldset>
+      <legend>배송정보</legend>
+      <ul>
+        <li>
+          <label for="name">이름</label>
+          <input type="text" id="name">
+          <!--css 사용시에는 lable 이랑 input 붙여서 코드 입력-->
+        </li>
+        <li>
+          <label for="address">배송 주소</label>
+          <input type="text" id="address">
+        </li>
+        <li>
+          <label for="emall">이메일</label>
+          <input type="email" id="emall">
+        </li>
+        <li>
+          <label for="tel">연락처</label>
+          <input type="tel" id="tel">
+        </li>
+        <li><label for="d-day">배송지정</label><input type="date">
+          <small>(주문일로부터 최소 3일 이후)</small></li>
+        <li><label for="memo">메모</label>
+          <textarea id="memo" cols="40" rows="4"></textarea>
+       </li>
+      </ul>
+    </fieldset>
+    <input type="submit" value="주문하기">
+    <input type="reset" value="취소하기">
+  </form>
+</body>
+</html>

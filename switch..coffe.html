@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>switch문으로 커피 주문</h2>
+  <script>
+    let prise=0; //초기화 개념으로 0원으로 표시
+    let coffee = prompt("무슨 커피 드릴까요?","")
+
+    switch(coffee) {
+      case "espresso" :
+      case "에스프레소" : prise= 2,000;
+      break; 
+      case "카푸치노" : prise= 3,000;
+      break;
+      case "카페라떼" : prise= 3,500;
+      break;
+      default :
+      document.write(coffee)
+    }
+
+  </script>
+</body>
+</html>

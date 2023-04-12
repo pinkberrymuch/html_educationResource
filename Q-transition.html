@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #ex {
+    margin: 20px auto;
+    width: 100px;
+    height: 100px;
+    perspective: 200px; /*원근감추가*/ /*부모 요소에 쓰이는 속성*/
+    float: left;
+    }
+   #ex div {
+    margin: 30px;
+   }
+   #ex .square {
+    width: 120px;
+    height: 120px;
+    background-color: rgb(118, 239, 255);
+    transition-duration: 0.5s;
+   }
+   #ex .square:hover {
+    width: 120px;
+    height: 120px;
+    background-color: rgb(11, 133, 233);
+   }
+   #ex .circle {
+    width: 120px;
+    height: 120px;
+    background-color: rgb(255, 99, 9);
+    border: 2px solid black;
+    transition-duration: 2s;
+   }
+   #ex .circle:hover {
+    width: 120px;
+    height: 120px;
+    background-color: rgb(255, 99, 9);
+    border: 2px solid rgb(168, 4, 4);
+    border-radius: 50%;
+   }
+  </style>
+</head>
+<body>
+  <div id="ex">
+    <div class="square"></div>
+    <div class="circle"></div>
+  </div>
+</body>
+</html>

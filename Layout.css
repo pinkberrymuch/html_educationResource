@@ -1,0 +1,25 @@
+#container {
+  width: 1200px;
+  margin: 20px auto;
+}
+#header {
+  background-color:lightgreen;
+  text-align: left;
+  height: 120px; width: 1100%;
+}
+#sidebar {
+ height: 600px; width: 300px;
+ background-color: lightgray;
+ float: left;
+}
+#contents {
+  display: inline-block;
+  width: 900px; height: 600px;
+  background-color: white;
+  float: left;
+}
+#footer {
+  background-color:lightgreen;
+  height: 100px; width: 100%;
+  clear: left; /*플로팅 해제*/
+}

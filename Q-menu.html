@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>menu예제</title> <!--메뉴 전체 너비 605px-->
+</head>
+<style>
+ * {
+      box-sizing: border-box;
+    }
+    .menu {
+      margin: 50px auto;
+      padding: 0;
+      list-style: none;
+      width: 605px;
+      height: 35px;
+      box-shadow: 0 3px 4px #8b8b8b;
+      background-color: #dadada;
+    }
+
+  .menu li:last-child {
+    border-right: none;
+  }
+  .menu li {
+    float: left;
+   border-right: 1px solid #929292;
+    width: 100px;
+    height: 35px;
+  }
+  .menu li a {
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    line-height: 35px;
+  }
+  .menu li:not(:last-child) a:hover {
+    background-color: #222;
+    color: #ccc;
+  }
+  .menu li:last-child a:hover {
+    background-color: red;
+    color: #ccc;
+  }
+
+</style>
+<body>
+    <nav>
+      <ul class="menu">
+        <li><a href="#" id="1">메뉴1</a></li>
+        <li><a href="#" id="2">메뉴2</a></li>
+        <li><a href="#" id="3">메뉴3</a></li>
+        <li><a href="#" id="4">메뉴4</a></li>
+        <li><a href="#" id="5">메뉴5</a></li>
+        <li><a href="#" id="6">메뉴6</a></li> <!--테두리제거 / 마우스 올렸을 때 빨간 배경-->
+      </ul>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회원 가입</title>
+  <style>
+   body {
+    background-color: rgb(3, 3, 32);
+    padding: 10px;
+   } 
+   #container {
+     width:500px;    /* 너비 */
+     height:700px;  /*높이*/
+     border:none;    /* 테두리 없앰 */
+     margin:0 auto;   /* 화면 중앙 배치 */ 
+     text-align: center; /*텍스트 정렬 가운데로*/
+     background-color: white;
+     padding: 20px;
+   }
+   #order {
+    text-align: left;
+    padding: 1px;
+    margin: 1px;
+   } /*input 에 100%*/
+   #footer_text {
+   color: white;
+   text-align: center;} /*텍스트 정렬 가운데로*/
+   
+   .login {
+    color: lightseagreen; /*로그인하러가기 색상 연한 초록*/
+   }
+   
+  </style>
+</head>
+<body>
+ <div id="container" >
+  <header>
+    <h2>회원가입</h2>
+    <p>회원 정보를 입력하세요</p>
+  </header>
+  <main>
+    <div id="order">
+      <p><small>first name</small></p>
+      <label for="F-name"><input type="text" size="64"></label>
+      <p><small>Last name</small></p>
+      <label for="L-name"><input type="text" size="64"></label>
+      <p><small>Email</small></p>
+      <label for="email"><input type="email" size="64"></label> <!--form wrap padding 칸넓이-->
+      <p><small>Password</small></p>
+      <label for="pwd"><input type="password" size="64"></label>
+      <p><small>Confirm Password</small></p>
+      <label for="repwd"><input type="password" size="64"></label><br>
+      <input type="image" src="images/join.png" alt="join" width="470px">
+    <p>By clicing the Sign Up button, you agree to our
+     <a href="" target="_blank" style="text-decoration: none;" >Terms & Conditions</a>and 
+     <a href="" target="_blank" style="text-decoration: none;">Privacy Policy</a>
+   </p> 
+  </main>
+  </div>
+  <footer id="footer_text"> 
+  <div id="gologin">
+   <p><strong>Already have an account?</strong>
+    <span class="login">로그인하러가기</span></p>
+  </div>
+</body>
+</html>

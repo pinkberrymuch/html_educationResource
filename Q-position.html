@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q-position</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .item-worp {
+      position: relative;
+      background-color: #eee;
+      width: 600px; height: 1800px;
+      padding: 20px;
+      margin: auto;
+      margin-top: 100px;
+      border-radius: 8px;
+      border: 1px solid #667949;
+    }
+    .item {
+      width: 560px;
+      color: white;
+      padding: 20px 10px;
+      border-radius: 4px;
+      text-align: center;
+      background-color: blue;
+      line-height: 50px;
+      margin-top: 10px;
+      border-color: rgb(8, 6 ,2);
+      box-shadow: 0 4px 16px rgba(0,79,255,0.2)
+    }
+    .static {
+      position: static; /*위치가 먹지 않는 포지션*/
+      left: 60px;
+    }
+    .relative {
+      position: relative;
+      left: 60px;
+    }
+    .absolute {
+     position: absolute;
+     left: 60px;
+    }
+    .fixed {
+      position: fixed;
+      top: 430px;
+      left: 60px;
+    }
+  </style>
+</head>
+<body>
+  <div class="item-wrop">
+    <div class="item static">static</div>
+    <div class="item relative">relative</div>
+    <div class="item absolute">absolute</div>
+    <div class="item fixed">fixed</div>
+  </div>
+</body>
+</html>
