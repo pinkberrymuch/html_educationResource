@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bg- size 속성</title>
+  <style>
+    #container {
+      width: 1100px;
+      margin: 50px auto;
+    }
+    .box {
+      width: 300px; height: 300px;
+      border: 1px solid #222;
+      margin: 20px;
+      background-image: url('images/bg4.jpg');
+      display: inline-block;
+    }
+    #bg1{
+      background-size: auto; background-repeat: no-repeat; }
+    #bg2{background-size: 200px; background-repeat: no-repeat;}
+    #bg3{background-size: 50%; background-repeat: no-repeat;}
+    #bg4{background-size: 100% 100%; background-repeat: no-repeat;}
+    #bg5{background-size: contain; background-repeat: no-repeat;}
+    #bg6{background-size: cover; background-repeat: no-repeat;}
+
+  </style>
+</head>
+<body>
+ <div id="container"> 
+  <div class="box" id="bg1"></div>
+  <div class="box" id="bg2"></div>
+  <div class="box" id="bg3"></div>
+  <div class="box" id="bg4"></div>
+  <div class="box" id="bg5"></div>
+  <div class="box" id="bg6"></div>
+ </div>
+</body>
+</html>

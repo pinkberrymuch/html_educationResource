@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Display</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    nav ul {
+      list-style: none;
+    }
+    nav ul li {
+      display: inline-block; /*가로 정렬로 변경하고 싶을 때*/
+      border: 1px solid #222;
+      padding: 20px;
+      margin: 0 20px;
+    }
+    span { /*인라인 속성인데 블록속성으로 변경 하는 경우*/
+      display: block;
+      width: 100px;
+      height: 60px;
+    }
+    .inlineEx {
+      display: inline;
+    }
+    .inlineblockEx {
+      display: inline-block;
+      border: 2px dotted orangered;
+      background-color: aqua;
+      margin: 10px;
+      width: 60px; height: 80px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li>menu 1</li>
+      <li>menu 2</li>
+      <li>menu 3</li>
+      <li>menu 4</li>
+    </ul>
+  </nav>
+  <div>
+    <span>block span</span>과
+    <span>block span</span>입니다.
+  </div>
+  <hr>
+  <div class="inlineEx"
+   style="background-color: orangered;">
+   <div>inline div</div>
+   <div>inline div</div>
+   <div>inline div</div>
+  </div>
+  <hr>
+  <div class="inlineblockEx"
+   style="background-color: orangered;">
+   <div>inline block div</div>
+   <div>inline block div</div>
+   <div>inline block div</div>
+  </div>
+</body>
+</html>

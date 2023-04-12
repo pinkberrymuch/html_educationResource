@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /*background-clip 속성*/
+    .desc {
+      border: 5px dotted #000;
+      background-color: orange;
+      width: 350px; padding: 20px;
+      margin-right: 20px;
+      float: left;
+    }
+   #clip-border {
+    background-clip: border-box;
+   }
+   #clip-padding {
+    background-clip: padding-box;
+   }
+   #clip-contant {
+    background-clip: content-box;
+   }
+   /*background-image , repeat 속성
+   body {
+    background-image: url(images/bg1.jpg);
+    background-repeat: repeat;
+   }*/
+
+   /*background-position 속성*/
+   ul {
+    list-style: none; /* 1. 먼저 불릿을 없앰 */
+    margin-left: -30px;
+   }
+   li {
+    background-image: url(images/book-icon.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 50px;
+    line-height: 40px;
+   }
+  </style>
+</head>
+<body>
+  <!--background-clip 속성
+ <div class="desc" id="clip-border">
+  <h1>레드향</h1>
+    <p>껍질에 붉은 빛이 돌아 <b>레드향</b>이라 불린다.</p>
+    <p>레드향은 <em>한라봉과 귤을 교배</em>한 것으로 <br>일반 귤보다
+    2~3배 크고, 과육이 붉고 통통하다.</p>
+ </div>  
+ <div class="desc" id="clip-padding">
+  <h1>레드향</h1>
+    <p>껍질에 붉은 빛이 돌아 <b>레드향</b>이라 불린다.</p>
+    <p>레드향은 <em>한라봉과 귤을 교배</em>한 것으로 <br>일반 귤보다
+    2~3배 크고, 과육이 붉고 통통하다.</p>
+ </div> 
+ <div class="desc" id="clip-contant">
+  <h1>레드향</h1>
+    <p>껍질에 붉은 빛이 돌아 <b>레드향</b>이라 불린다.</p>
+    <p>레드향은 <em>한라봉과 귤을 교배</em>한 것으로 <br>일반 귤보다
+    2~3배 크고, 과육이 붉고 통통하다.</p>
+ </div> -->
+
+ <hr>
+ <!--background-position 속성-->
+ <h1>이지스퍼블리싱</h1>
+ <ul>
+  <li>회사소개</li>
+  <li>도서</li>
+  <li>자료실</li>
+  <li>동영상강의</li>
+ </ul>
+ <!--background-origin 속성-->
+</body>
+</html>
