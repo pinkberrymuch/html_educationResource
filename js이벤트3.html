@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button id="change">글자색 바꾸기</button>
+  <p>aaaaaabbcccccccdeffffgggggghiijklmnopqrstuvwxyzzzzzzz</p>
+
+
+  <script>
+    //방법1 : 웹요소를 변수로지정 & 미리 만든 함수 사용
+    //var changeBttn = document.querySelector('#change');
+   // changeBttn.onclick = changeColor();
+
+    //function changeColor() {
+    //  document.querySelector("p").style.color = "#f00"
+   // }
+    //방법2 웹요소를 변수로 만들지 않고 사용
+   // document.querySelector('#change').onclick =changeColor; //괄호 뺌
+
+   //방법3 직접 함수를 선언
+   document.querySelector('#change').onclick=function() {
+    document.querySelector('#p').style.color = "#f00"
+   }
+  </script>
+</body>
+</html>

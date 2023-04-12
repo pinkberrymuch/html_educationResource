@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function calcSum(n) { 
+      let sum=0; //글로벌변수
+      for(let i=1; i<n +1; i++) { //블록변수
+      sum += i; 
+    }
+    console.log(sum) ;
+  }
+  calcSum(10);   //10을 주면 위에 선언한 n 값에 10이 대입됨
+  </script>
+</body>
+</html>

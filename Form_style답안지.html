@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Form Styling</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      /*보더박스 기준!*/
+      padding: 0;
+      margin: 0;
+    }
+    body {
+      background-color: #344a72;
+      font-family: Raleway;
+      color: white;
+      line-height: 1.8;
+    }
+    a {
+      text-decoration: none;
+    }
+    #container {
+      width: 500px;
+      margin: 30px auto;
+      padding: 20px;
+    }
+    .form-wrap {
+      background-color: white;
+      color: #333;
+      padding: 15px 25px;
+    }
+    h1, p {
+      text-align: center;
+    }
+    label {
+      /* display: block; */
+      color: #666;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+    button {
+      /* display: block; */
+      width: 100%;
+      color: white;
+      background-color: #49c1a2;
+      padding: 10px;
+      margin-top: 20px;
+    }
+    .bottom-text {
+      font-size: 13px;
+      margin-top: 20px;
+    }
+    footer {
+      text-align: center;
+      margin-top: 10px;
+    }
+    footer a {  /*푸터의 자식태그의 a를 의미*/
+      color: #49c1a2;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div class="form-wrap">
+      <!--내용을 싸고 있음-->
+      <h1>회원가입</h1>
+      <p>회원 정보를 입력하세요</p>
+      <form>
+        <label for="first-name">First Name</label><br>
+        <input type="text" name="firstName" id="first-name" />
+            
+        <label for="last-name">Last Name</label><br>
+        <input type="text" name="lastName" id="last-name" />
+            
+        <label for="email">Email</label><br>
+        <input type="email" name="email" id="email" />
+            
+        <label for="password">Password</label><br>
+        <input type="password" name="password" id="password" />
+            
+        <label for="password2">Confirm Password</label><br>
+        <input type="password" name="pasword2" id="password2" />
+        
+        <button type="submit" class="btn">회원가입</button>
+     
+        <p class="bottom-text">
+          By clicking the Sign Up button, you agree to our
+          <a href="#">Terms & Conditions</a> and
+          <a href="#">Privacy Policy</a>
+        </p>
+      </form>
+    </div>
+    <footer>
+      <p>Already have an account? <a href="#">로그인하러가기</a></p>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>자리 배치도</title>
+  <style>
+    table, td {
+      border: 1px solid #ccc;
+      border-collapse: collapse;
+    }
+  </style>
+</head>
+<body>
+  <h1>자리 배치도</h1>
+
+  <!--prompt 창이 두번 뜨게-->
+  <script>
+    let memNum = perseInt(prompt("입장객은 몇 명인가요?"));
+    let colNum = perseInt(prompt("한 줄에 몇 명이 앉습니까?"));
+    let rowNum;
+    let seatNun=0; //초기화
+    
+    if (memNum % colNum === 0)
+      rowNum =(memNum / colNum);
+    else
+      rowNum =(memNum / colNum) + 1;
+      document.write("<table>")
+    //document.write("모두" + rowNum + "개의 줄이 필요합니다.");
+     for(let i=0; i<rowNum; i++) {
+      document.write("<tr>")
+      for(let j=1; j<colNum; j++) {
+        seatNun = i * colNum +j; //좌석번호
+      if (seatNun > memNum) break;
+      document.write("<td> 좌석" + seatNun + "</td>");
+     }
+     document.write("</tr>");
+     }
+     document.write("</table>");
+  </script>
+</body>
+</html>

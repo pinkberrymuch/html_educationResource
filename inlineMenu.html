@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS float 속성</title>
+  <style>
+    * {
+    margin: 0;
+    }
+    a {
+        color:inherit;
+        text-decoration: none;
+    }
+    /* 노말라이즈 끝 */
+    /* 커스텀 */
+    nav {
+        margin-top:50px;
+        text-align: center;
+    }
+    section {
+        background-color:#afafaf;
+        display: inline-block;
+        text-align:center;
+        border-radius: 10px;
+        padding: 0 20px;
+    }
+    section  div {
+        display: inline-block;   
+    }
+    section div a {
+        padding: 20px;
+        display: block;
+        font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <!-- 메뉴 -->
+    <section>
+        <!-- 메뉴 아이템 -->
+        <div>
+            <!-- 메뉴 아이템 텍스트(클릭하면 이동해야 하므로 a태그 사용)-->
+            <a href="#">Home</a>
+        </div>
+        <div>
+            <a href="#">Tutorials</a>
+        </div>
+        <div>
+            <a href="#">Articles</a>
+        </div>
+        <div>
+            <a href="#">Inspiration</a>
+        </div>
+    </section>
+</nav>
+</body>
+</html>

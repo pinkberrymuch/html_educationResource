@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    function addNumber() {
+      var sum=10+20;
+      multi=10+20; //var사용 안했으므로 : 전역변수
+    }  //지역변수 : sum을 함수 안에서 사용했으므로
+
+    addNumber();
+    console.log(sum); //오류발생 : 지역변수는 위의 function 안에서만 사용해야 함
+    console.log(multi); //오류가 없음 / 글로벌 전역변수 이므로
+  </script>
+</body>
+</html>

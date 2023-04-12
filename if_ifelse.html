@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>조건문</title>
+</head>
+<body>
+  <script>
+    var usernumber = prompt ("숫자를 입력하세요.") ;
+
+   // if (usernumber !== null) { //null 값이 아니라면 !==
+     // if (usernumber % 3 === 0)
+     //    alert ("3의 배수입니다.");
+    //  else
+      //  alert ("3의 배수가 아닙니다.");  
+  //  } else { //중첩된 구문
+    //  alert ("입력이 취소됐습니다"); //null 값이라면
+ //   }
+    if (usernumber !== null) 
+      (usernumber % 3 === 0) ? alert("3의 배수입니다.") : alert("3의 배수가 아닙니다."); //연산자 사용 하나뿐인 조건일때
+      else 
+      alert ("입력이 취소됐습니다"); //null 값이라면
+  </script>
+</body>
+</html>

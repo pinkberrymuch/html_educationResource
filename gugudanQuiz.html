@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>gogodan quiz</title>
+</head>
+<body>
+  <script>
+    function random() {
+      return Math.floor(Math.random()*9)+1; }
+
+    var a = random();
+    var b = random();
+    var ques = a + "*" +b
+    //사용자로부터 답입력
+    var user =prompt(ques +"값은 얼마입니까?",0);
+    if(user == null) {
+      document.write("구구단 연습을 종료합니다.")
+    } else {
+      var ans = a * b; //구구단의 정답계산
+      if (ans == user)
+      document.write("정답! ");
+    else 
+    document.write("아니오! ");
+    } 
+   
+  </script>
+</body>
+</html>

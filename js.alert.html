@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>js 알림창 띄우는 실습</title>
+</head>
+<body>
+  <script>
+   // alert("안녕하세요?"); //알림창 띄우기 ,텍스트는 큰따움표 ,마지막 세미클론 필수
+
+   // var reply = confirm("정말 배경 이미지를 바꾸겠습니까?"); //확인이나 취소, var reply 변수
+    //reply 변수에 확인(true) 또는 취소(no) 값이 저장됨
+
+    //var name = prompt("이름을 입력하세요","아무개") //아무개: 기본값, 입력안하면 블랭크
+    //텍스트 필드가있는 알림창 표시
+    document.write("<h1>어서오세요</h1>");
+    var name = prompt("이름을 입력하세요","아무개");
+   // document.write("<b><big>" + name + "</b></big>님, 환영합니다.");
+   console.log(name + "님,환영합니다.") //화면에는 안나오고 콘솔에만
+  </script>
+</body>
+</html>
